@@ -99,8 +99,8 @@ def button_click(s):
     elif s == shades[6]:
         test_shade = Image.open(r"samples/shore.jpg")
 
-    test_canvas.image = ImageTk.PhotoImage(test_shade.resize((50,50), Image.ANTIALIAS))
-    my_test_shade = test_canvas.create_image(160, 150, anchor=NW, image=test_canvas.image)
+    test_canvas.image = ImageTk.PhotoImage(test_shade.resize((100,50), Image.ANTIALIAS))
+    my_test_shade = test_canvas.create_image(150, 150, anchor=NW, image=test_canvas.image)
 
     def left(event):
         x = -20
